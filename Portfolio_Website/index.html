@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header_text">
+            <p>Software Developer</p>
+            <h1>Hii, I'm <span>Atish</span> <br>Kumar From INDIA</h1>
+        </div>
+    </div>
+   </div> 
+<!-- /*--------------------About---------------------*/ -->
+   <div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="col-1">
+                <img src="images/Profile_Img.jpg">
+            </div>
+            <div class="col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde officiis odit autem labore veniam repellendus ab consequuntur sed blanditiis non fugiat, incidunt nostrum, veritatis minus libero. Alias quaerat impedit numquam nisi doloremque aliquid corrupti magnam soluta, perferendis dolorum consequuntur possimus dicta natus dolore, facere enim unde nesciunt debitis. Id?</p>
+                <div class="tab-title">
+                    <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contains active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Developer</span><br>Web Development</li>
+                        <li><span>App Developer</span><br>Building Android/iOS apps</li>
+                        <li><span>Web Developer</span><br>Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contains" id="experience">
+                    <ul>
+                        <li><span>Web Developer</span><br>Web Development</li>
+                        <li><span>App Developer</span><br>Building Android/iOS apps</li>
+                        <li><span>Web Developer</span><br>Web Development</li>
+                    </ul>
+                </div>
+                <div class="tab-contains" id="education">
+                    <ul>
+                        <li><span>2020</span><br>10th from CBSE(94.6%)</li>
+                        <li><span>2022</span><br>12th from CBSE(96.2%)</li>
+                        <li><span>2022-2026(expected)</span><br>B.Tech from IIT Jodhpur</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+   <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contains");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-links");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-links");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+   </script>
+</body>
+</html>
