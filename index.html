@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d14c5e2516.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <div id="header">
@@ -12,11 +13,11 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header_text">
@@ -34,7 +35,8 @@
             </div>
             <div class="col-2">
                 <h1 class="subtitle">About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo unde officiis odit autem labore veniam repellendus ab consequuntur sed blanditiis non fugiat, incidunt nostrum, veritatis minus libero. Alias quaerat impedit numquam nisi doloremque aliquid corrupti magnam soluta, perferendis dolorum consequuntur possimus dicta natus dolore, facere enim unde nesciunt debitis. Id?</p>
+                <p class="font">Hello, I'm Atish Kumar, a dedicated Electrical Engineering student at the Indian Institute of Technology, Jodhpur, currently pursuing my Bachelor of Technology degree with an expected graduation in 2026. My academic journey has been marked by a consistent performance,With a strong foundation in electrical systems and programming. My interests include software development, AI, product management, and data science. <br>I have a keen interest in applying theoretical knowledge to real-world problems. I'm looking forward to work with people where I can put my skills in the use and help the society to become a better version of itself.
+                </p>
                 <div class="tab-title">
                     <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
                     <p class="tab-links" onclick="opentab('experience')">Experience</p>
@@ -42,16 +44,16 @@
                 </div>
                 <div class="tab-contains active-tab" id="skills">
                     <ul>
-                        <li><span>Web Developer</span><br>Web Development</li>
-                        <li><span>App Developer</span><br>Building Android/iOS apps</li>
-                        <li><span>Web Developer</span><br>Web Development</li>
+                        <li><span>PROGRAMMING</span><br>C • C++ • Python • HTML • CSS • Javascript • Verilog</li>
+                        <li><span>MACHINE LEARNING TOOLS</span><br>Numpy • Pandas • Scikit-Learn • Neural Networks</li>
+                        <li><span>OTHER TOOLS AND TECHNOLOGIES</span><br>Git • Github • Windows • Jupyter Notebook • Google Colab</li>
                     </ul>
                 </div>
                 <div class="tab-contains" id="experience">
                     <ul>
-                        <li><span>Web Developer</span><br>Web Development</li>
-                        <li><span>App Developer</span><br>Building Android/iOS apps</li>
-                        <li><span>Web Developer</span><br>Web Development</li>
+                        <li><span>Feb,2024</span><br>•Assistant Head Coordinator, Cultural Fest (IGNUS), IIT Jodhpur</li>
+                        <li><span>Dec,2023</span><br>Represented in Inter IIT Cult Meet 6.0, Participated in Cultural Events, IIT Kharagpur</li>
+                        <li><span>Present</span><br>Core Member, Dramatics Society, IIT Jodhpur</li>
                     </ul>
                 </div>
                 <div class="tab-contains" id="education">
@@ -61,10 +63,112 @@
                         <li><span>2022-2026(expected)</span><br>B.Tech from IIT Jodhpur</li>
                     </ul>
                 </div>
+                <a href="Resume_Atish.pdf" class="more btn">Download CV</a>
             </div>
         </div>
     </div>
    </div>
+
+   <!-- ------------------------Services----------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>With a solid foundation in electrical engineering and a profound understanding of modern software development practices,I  delivers robust, scalable, and efficient software solutions that drive business growth and innovation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>AI and Data Science</h2>
+                    <p>Offering AI and data science services, including machine learning model development, data analysis, and predictive analytics. Utilizing advanced algorithms and tools to deliver actionable insights and innovative AI solutions.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>Providing comprehensive app design services, specializing in creating intuitive, user-friendly interfaces for both iOS and Android. Focused on delivering visually appealing and highly functional app experiences.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>   
+    </div>
+
+
+    <!-- ---------------------------My Work----------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images\dataset-card.jpg ">
+                    <div class="layer">
+                        <h3>Stroke Predictor</h3>
+                        <p>An ML based project that predicts patients’ risk of having a heart disease based on user input.
+                        Developed a stroke prediction model using machine learning, employing several algorithms like Decision Tree,
+                        K-Nearest Neighbors (KNN), Artificial Neural Network (ANN), Naive Bayes, and Random Forest.</p>
+                        <a href="https://github.com/akb22ee015/PRML-Project"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\carlos-muza-hpjSkU2UYSU-unsplash.jpg">
+                    <div class="layer">
+                        <h3>TA Allocation System </h3>
+                        <p>Tested a Web Application to optimally match 1000+ Teacher Assistants (TAs) and 200+ Courses according to
+                        their preferences and availability</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images\nick-morrison-FHnnjk1Yj7Y-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Made a full responsive website using HTML, CSS, JS.</p>
+                        <a href="https://github.com/akb22ee015/Portfolio_Website"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/akb22ee015" class="more">See More</a>
+        </div>
+    </div>
+
+
+<!-- ----------------------------contact---------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kumaratish7009@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>b22ee015@iitj.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>9508813493</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/atish-kumar-0bb004256/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100028515579749"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/_atish_kr_/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://x.com/kumaratish7009"><i class="fa-brands fa-twitter"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="column2">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="more btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright 2024 © All rights reserved</p>
+        </div>
+    </div>
 
    <script>
         var tablinks = document.getElementsByClassName("tab-links");
